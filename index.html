@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>IMC</title>
+</head>
+<body>
+    <main>
+        <div class="titulo">
+            <h2>indice de masa corporal</h2> 
+        </div>
+        <div id="contenedor">
+            <div class="inputs">
+                <div class="peso">
+                    <label for="">Peso (Kg)</label>
+                    <input type="number" name="" id="peso">
+                </div>
+                <div class="estatura">
+                    <label for="">estatura (m)</label>
+                    <input type="number" name="" id="estatura">
+                </div>
+                <div class="btn">
+                    <input type="button" value="Calcular">
+                </div>
+                
+            </div>
+            <div class="resultado">
+                <h3>IMC</h3>
+                <h3 id="res"></h3>
+                <h3 id="text"></h3>
+            </div>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>

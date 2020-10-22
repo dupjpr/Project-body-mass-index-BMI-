@@ -36,13 +36,13 @@ main{
 #contenedor{
     margin: auto;
     width: 30%;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: row;
 }
 
 .inputs{
-    width: 60%;
+    width: 50%;
     height: 100%;
     background-color: var(--general-bg-color);
     display: flex;
@@ -77,17 +77,24 @@ main{
     text-align: center; 
 }
 .btn input{
-    width: 40%;
+    width: 30%;
     height: 35px;
     border: none;
+    border-radius: 3%;
     background-color: var(--heder-bg-color);
     color: var(--font-color);
     outline: none
 }
 
+.btn input:hover{
+    background-color: #98ede0;
+}
+
+
 #msn{
     margin: auto;
     width: 90%;
+    padding: 2% 0;
     border: solid 1px #e7cdd0;
     border-radius: 3%;
     background-color: RGB(247, 215, 218);
@@ -96,7 +103,7 @@ main{
 }
 
 .resultado{
-    width: 40%;
+    width: 50%;
     height: 100%;
     background-color: var(--resultado-bg-color);
 }
@@ -108,10 +115,12 @@ main{
 .resultado{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
-#text{
+
+.text{
     font-size: 0.9rem;
+    text-align: center;
 }

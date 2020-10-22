@@ -1,4 +1,5 @@
 :root{
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     --heder-bg-color: #89f4e4;
     --font-color: #303232;
@@ -13,9 +14,10 @@
 }
 
 main{
-    margin-top: 5%;
+    
     width: 100%;
-    height: 700px;
+    height: auto;
+    
 }
 
 .titulo{
@@ -28,6 +30,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3%;
 }
 
 #contenedor{
@@ -70,7 +73,7 @@ main{
     
 }
 .btn{
-    width: 80%;
+    width: 100%;
     text-align: center; 
 }
 .btn input{
@@ -80,6 +83,16 @@ main{
     background-color: var(--heder-bg-color);
     color: var(--font-color);
     outline: none
+}
+
+#msn{
+    margin: auto;
+    width: 90%;
+    border: solid 1px #e7cdd0;
+    border-radius: 3%;
+    background-color: RGB(247, 215, 218);
+    margin-top: 5%;
+    font-size: 0.9rem;
 }
 
 .resultado{

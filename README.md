@@ -1,4 +1,4 @@
-# Project "INDICE DE MASA CORPORAL IMC"
+# Project "BODY MASS INDEX BMI"
 
 The result is available in the next link: https://dupjpr.github.io/IMC/
 

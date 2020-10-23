@@ -124,3 +124,26 @@ main{
     font-size: 0.9rem;
     text-align: center;
 }
+
+.normal{
+    background-color:#d4edda;
+    padding: 5%;
+    border-radius: 5%; 
+    border: 1px solid #cddfd0;
+}
+
+.inferior{
+    background-color: #fff3cd;
+    padding: 5%;
+    border-radius: 5%;
+    border: 1px solid #f7edd1;
+}
+
+
+
+.superior{
+    background-color:#f8d7da;
+    padding: 5%;
+    border-radius: 5%;
+    border: 1px solid #e7cdd0;
+}

@@ -11,11 +11,11 @@ function calculo(){
    
     const valid = validar();
     if(valid === 'ok'){
-        const a = peso.value;
-        const b = estatura.value;
+        const a = parseInt(peso.value);
+        const b = parseFloat(estatura.value)**2;
         const resultado = (a / b).toFixed(1);
-        const msnDiagnostico = diagnostico(resultado);
-        pantalla(resultado, msnDiagnostico);
+        pantalla(resultado);
+        diagnostico(resultado);
     }
 }
 
@@ -43,20 +43,39 @@ function mensajeErrorHTML(msn){
     }, 3000);
 }
 
-function pantalla(resultado, diagnostico){
-    result.textContent = resultado;   
-    texto.textContent = diagnostico;
+function pantalla(resultado){
+    result.textContent = resultado;
+}
+
+function diagnosticoHTML(msn){
+    texto.textContent = msn;
 }
 
 function diagnostico(resultado){
 
     if (resultado < 18.5){
-        return "Tu peso es inferior al normal";
+        const msn = "Tu peso es inferior al normal";
+        texto.classList.remove('superior','normal');
+        texto.classList.add('inferior');
+        diagnosticoHTML(msn);
+        return
     }else if(resultado > 18.5 && resultado < 24.9){
-        return "Tu peso es normal";
+        const msn = "Tu peso es normal"; 
+        texto.classList.remove('superior','inferior');
+        texto.classList.add('normal');
+        diagnosticoHTML(msn);
+        return
     }else if(resultado > 25 && resultado < 29.9){
-        return "Tu peso es superior al normal"
+        const msn = "Tu peso es superior al normal"; 
+        texto.classList.remove('superior','normal');
+        texto.classList.add('inferior');
+        diagnosticoHTML(msn);
+        return
     }else if(resultado > 30){
-        return ('Obesidad');
+        const msn = "Obesidad"; 
+        texto.classList.remove('inferior','normal');
+        texto.classList.add('superior');
+        diagnosticoHTML(msn);
+        return
     }
 }

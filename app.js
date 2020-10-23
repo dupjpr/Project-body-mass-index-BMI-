@@ -95,6 +95,7 @@ function diagnostico(resultado){
 
 function removeDiagnostico(){
     setTimeout(() => {
-        texto.remove();
+        texto.classList.remove('inferior','normal', 'superior');
+        texto.textContent = '';
     }, 4000);
 }

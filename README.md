@@ -1,6 +1,6 @@
 # Project "BODY MASS INDEX BMI"
 
-The result is available in the next link: https://dupjpr.github.io/IMC/
+The result is available in the next link: https://dupjpr.github.io/Project-body-mass-index-BMI-/
 
 You will find a small application that allows you to calculate the body mass index. To use the application it is necessary to enter the weight and height of a person.
 

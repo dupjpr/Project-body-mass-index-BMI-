@@ -45,6 +45,15 @@ function mensajeErrorHTML(msn){
 
 function pantalla(resultado){
     result.textContent = resultado;
+    limpiarHTML();
+    setTimeout(() => {
+        result.textContent = '-';
+    }, 4000);
+}
+
+function limpiarHTML(){
+    peso.value = '';
+    estatura.value = '';
 }
 
 function diagnosticoHTML(msn){
@@ -58,24 +67,34 @@ function diagnostico(resultado){
         texto.classList.remove('superior','normal');
         texto.classList.add('inferior');
         diagnosticoHTML(msn);
+        removeDiagnostico();
         return
     }else if(resultado > 18.5 && resultado < 24.9){
         const msn = "Tu peso es normal"; 
         texto.classList.remove('superior','inferior');
         texto.classList.add('normal');
         diagnosticoHTML(msn);
+        removeDiagnostico();
         return
     }else if(resultado > 25 && resultado < 29.9){
         const msn = "Tu peso es superior al normal"; 
         texto.classList.remove('superior','normal');
         texto.classList.add('inferior');
         diagnosticoHTML(msn);
+        removeDiagnostico();
         return
     }else if(resultado > 30){
         const msn = "Obesidad"; 
         texto.classList.remove('inferior','normal');
         texto.classList.add('superior');
         diagnosticoHTML(msn);
+        removeDiagnostico();
         return
     }
+}
+
+function removeDiagnostico(){
+    setTimeout(() => {
+        texto.remove();
+    }, 4000);
 }

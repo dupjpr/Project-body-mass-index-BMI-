@@ -1,6 +1,8 @@
 # "BODY MASS INDEX BMI" Project 
 
-The result is available in the next link: https://dupjpr.github.io/Project-body-mass-index-BMI-/
+The result is available in the next link:
+
+https://dupjpr.github.io/Project-body-mass-index-BMI-/
 
 ## Description :page_facing_up:
 
